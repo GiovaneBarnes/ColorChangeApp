@@ -15,6 +15,7 @@
 		C019E40826968F9B00B93E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C019E40626968F9B00B93E3A /* LaunchScreen.storyboard */; };
 		C019E41326968F9C00B93E3A /* ColorChangeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019E41226968F9C00B93E3A /* ColorChangeAppTests.swift */; };
 		C019E41E26968F9C00B93E3A /* ColorChangeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019E41D26968F9C00B93E3A /* ColorChangeAppUITests.swift */; };
+		C019E42F26969D6200B93E3A /* ColorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019E42E26969D6200B93E3A /* ColorTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C019E41926968F9C00B93E3A /* ColorChangeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorChangeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C019E41D26968F9C00B93E3A /* ColorChangeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangeAppUITests.swift; sourceTree = "<group>"; };
 		C019E41F26968F9C00B93E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C019E42E26969D6200B93E3A /* ColorTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,11 @@
 		C019E3FA26968F9800B93E3A /* ColorChangeApp */ = {
 			isa = PBXGroup;
 			children = (
-				C019E3FB26968F9800B93E3A /* AppDelegate.swift */,
+				C019E42D26969D0C00B93E3A /* Model */,
+				C019E42B269693A900B93E3A /* Resources */,
 				C019E3FD26968F9800B93E3A /* SceneDelegate.swift */,
 				C019E3FF26968F9800B93E3A /* ViewController.swift */,
-				C019E40126968F9800B93E3A /* Main.storyboard */,
-				C019E40426968F9B00B93E3A /* Assets.xcassets */,
-				C019E40626968F9B00B93E3A /* LaunchScreen.storyboard */,
-				C019E40926968F9B00B93E3A /* Info.plist */,
+				C019E43026969ECD00B93E3A /* View */,
 			);
 			path = ColorChangeApp;
 			sourceTree = "<group>";
@@ -126,6 +126,33 @@
 				C019E41F26968F9C00B93E3A /* Info.plist */,
 			);
 			path = ColorChangeAppUITests;
+			sourceTree = "<group>";
+		};
+		C019E42B269693A900B93E3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C019E3FB26968F9800B93E3A /* AppDelegate.swift */,
+				C019E40426968F9B00B93E3A /* Assets.xcassets */,
+				C019E40926968F9B00B93E3A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C019E42D26969D0C00B93E3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C019E42E26969D6200B93E3A /* ColorTool.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C019E43026969ECD00B93E3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C019E40126968F9800B93E3A /* Main.storyboard */,
+				C019E40626968F9B00B93E3A /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +289,7 @@
 				C019E40026968F9800B93E3A /* ViewController.swift in Sources */,
 				C019E3FC26968F9800B93E3A /* AppDelegate.swift in Sources */,
 				C019E3FE26968F9800B93E3A /* SceneDelegate.swift in Sources */,
+				C019E42F26969D6200B93E3A /* ColorTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ColorChangeApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ColorChangeApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ColorChangeApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ColorChangeApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,7 +498,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ColorChangeAppTests/Info.plist;
+				INFOPLIST_FILE = ColorChangeAppTests/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,7 +519,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ColorChangeAppTests/Info.plist;
+				INFOPLIST_FILE = ColorChangeAppTests/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
