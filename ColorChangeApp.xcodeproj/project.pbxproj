@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C019E3FC26968F9800B93E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019E3FB26968F9800B93E3A /* AppDelegate.swift */; };
 		C019E3FE26968F9800B93E3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019E3FD26968F9800B93E3A /* SceneDelegate.swift */; };
-		C019E40026968F9800B93E3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019E3FF26968F9800B93E3A /* ViewController.swift */; };
+		C019E40026968F9800B93E3A /* ColorChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C019E3FF26968F9800B93E3A /* ColorChangeViewController.swift */; };
 		C019E40326968F9800B93E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C019E40126968F9800B93E3A /* Main.storyboard */; };
 		C019E40526968F9B00B93E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C019E40426968F9B00B93E3A /* Assets.xcassets */; };
 		C019E40826968F9B00B93E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C019E40626968F9B00B93E3A /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		C019E3F826968F9800B93E3A /* ColorChangeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorChangeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C019E3FB26968F9800B93E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C019E3FD26968F9800B93E3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C019E3FF26968F9800B93E3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C019E3FF26968F9800B93E3A /* ColorChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangeViewController.swift; sourceTree = "<group>"; };
 		C019E40226968F9800B93E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C019E40426968F9B00B93E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C019E40726968F9B00B93E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 				C019E42D26969D0C00B93E3A /* Model */,
 				C019E42B269693A900B93E3A /* Resources */,
 				C019E3FD26968F9800B93E3A /* SceneDelegate.swift */,
-				C019E3FF26968F9800B93E3A /* ViewController.swift */,
+				C019E3FF26968F9800B93E3A /* ColorChangeViewController.swift */,
 				C019E43026969ECD00B93E3A /* View */,
 			);
 			path = ColorChangeApp;
@@ -286,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C019E40026968F9800B93E3A /* ViewController.swift in Sources */,
+				C019E40026968F9800B93E3A /* ColorChangeViewController.swift in Sources */,
 				C019E3FC26968F9800B93E3A /* AppDelegate.swift in Sources */,
 				C019E3FE26968F9800B93E3A /* SceneDelegate.swift in Sources */,
 				C019E42F26969D6200B93E3A /* ColorTool.swift in Sources */,
